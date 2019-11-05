@@ -1,0 +1,10 @@
+/* pages/component/component.wxss */
+.box1{
+  width: 100px;
+  height: 100px;
+  background: purple;
+}
+.hover-view{
+  background: orange;
+  font-size: 30px;
+}

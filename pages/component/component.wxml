@@ -1,0 +1,11 @@
+<!--pages/component/component.wxml-->
+<text>湖人\n</text>
+<text>总冠军\n</text>
+<text selectable="{{true}}">啦啦啦啦啦\n</text>
+<text selectable>呵呵呵呵呵\n</text>
+
+<view>
+  <text>容器</text>
+  <button>按钮</button>
+</view>
+<view class="box1" hover-class="hover-view" hover-stay-time="{{0}}">box1</view>

@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<!-- 1.数据绑定 -->
+<view>hello {{name}}</view>
+<!-- 2.列表 -->
+<view wx:for="{{students}}" wx:key="index">{{item.name}}-{{item.age}}</view>
+<!-- 3.事件监听 -->
+<view>{{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleMinusBtnClick">-</button>
+
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息</button>
+
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
