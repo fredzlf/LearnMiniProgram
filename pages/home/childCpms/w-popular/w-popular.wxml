@@ -1,0 +1,4 @@
+<!--pages/home/childCpms/w-popular/w-popular.wxml-->
+<view class="popular">
+  <image src="/assets/images/home/recommend_bg.jpg" mode="widthFix"></image>
+</view>

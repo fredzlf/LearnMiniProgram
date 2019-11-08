@@ -1,15 +1,14 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<!-- 1.数据绑定 -->
-<view>hello {{name}}</view>
-<!-- 2.列表 -->
-<view wx:for="{{students}}" wx:key="index">{{item.name}}-{{item.age}}</view>
-<!-- 3.事件监听 -->
-<view>{{counter}}</view>
-<button size="mini" bindtap="handleBtnClick">+</button>
-<button size="mini" bindtap="handleMinusBtnClick">-</button>
-
-<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息</button>
-
-<open-data type="userNickName"></open-data>
-<open-data type="userAvatarUrl"></open-data>
+<!-- 1.轮播图 -->
+<w-swiper list="{{banners}}" />
+<!-- 2.推荐数据展示 -->
+<w-recommend recommends="{{recommends}}" bind:imageLoad="handleImageLoad"/>
+<!-- 3.展示本周流行 -->
+<w-popular/>
+<!-- 4.tab-control -->
+<w-tab-control class='tab-control' titles="{{titles}}" bind:tabclick="handleTabClick" id="tab-control" class="{{isTabFixed ? 'fixed':''}}"/>
+<w-teb-control titles="{{titles}}" wx:if="{{isTabFixed}}"/>
+<!-- 5.展示商品数据 -->
+<w-goods goods="{{goods[currentType].list}}"/>
+<!-- 6.回到顶部 -->
+<!-- hidden对自定义组件没有效果 -->
+<w-back-top wx:if="{{showBackTop}}" />

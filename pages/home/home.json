@@ -1,6 +1,11 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "商品分类",
-  "navigationBarBackgroundColor": "#ff0000",
-  "enablePullDownRefresh": true
+  "usingComponents": {
+    "w-swiper": "/components/w-swiper/w-swiper",
+    "w-tab-control": "/components/w-tab-control/w-tab-control",
+    "w-goods": "/components/w-goods/w-goods",
+    "w-back-top": "/components/w-back-top/w-back-top",
+    "w-recommend": "./childCpms/w-recommend/w-recommend",
+    "w-popular": "./childCpms/w-popular/w-popular"
+  },
+  "navigationBarTitleText": "购物街"
 }
